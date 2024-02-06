@@ -2,11 +2,15 @@ version: 2
 
 sources:
   - name: raw 
-    schema: gz_raw_data
+    schema: 
+    description: data base des ventes, produits et shiping
     tables:
       - name: sales
         identifier: raw_gz_sales
+        description: vente
       - name: product
         identifier: raw_gz_product
+        description: produits
       - name: ship
         identifier: raw_gz_ship
+        description: livraison
