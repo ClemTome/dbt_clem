@@ -13,7 +13,8 @@ renamed as (
         orders_id,
         pdt_id AS products_id,
         revenue,
-        quantity
+        quantity,
+        CONCAT (pdt_id, "_", orders_id) AS primary_key
 
     from source
 
