@@ -1,3 +1,6 @@
+
+{{ config(materialized= "table") }}
+
 SELECT
 date_date
 ,ROUND(COUNT(orders_id),2) AS nb_transaction
